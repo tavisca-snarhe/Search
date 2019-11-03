@@ -1,0 +1,6 @@
+<div>
+    <app-search (search)="onSearch($event)"></app-search>
+    <div class="results" *ngFor="let item of items">
+        <app-item [item]="item"></app-item>
+    </div>
+</div>
